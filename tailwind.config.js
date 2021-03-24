@@ -8,26 +8,16 @@ module.exports = {
         'default-background': '#060606',
         'default-background-opaque': 'rgba(6, 6, 6, 0.8)'
       },
-      maxHeight: {
-        '700': '700px'
-      },
       height: {
-        '700': '700px',
         '900': '900px',
-        '28rem': '28rem',
         '270px': '270px',
         '450px': '450px',
         '576px': '576px',
-        '90vh': '90vh',
         '80vh': '80vh',
         '70vh': '70vh',
-        '60vh': '60vh'
       },
       width: {
         '576px': '576px',
-        '432px': '432px',
-        '320px': '320px',
-        '400px': '400px',
         '450px': '450px',
         '500px': '500px',
       },
@@ -39,9 +29,6 @@ module.exports = {
       },
       padding: {
         '30rem': '30rem',
-        '34rem': '34rem',
-        '38rem': '38rem',
-        '42rem': '42rem',
       },
       screens: {
         '3xl': '1700px',

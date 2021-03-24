@@ -1,4 +1,4 @@
-import Contact from '../components/contact';
+import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 
 export default function MyLayout({children}) {
@@ -6,7 +6,7 @@ export default function MyLayout({children}) {
     <>
       <Navbar />
       {children}
-      <Contact />
+      <Footer />
     </>
   )
 }

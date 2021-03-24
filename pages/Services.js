@@ -1,8 +1,12 @@
-import Image from 'next/image';
 import PageHero from '../components/page-hero';
+import { NextSeo } from 'next-seo';
 export default function Services() {
   return (
     <div className="pt-16 ">
+      <NextSeo
+        title="Services - Distinctive Drafting and Design"
+        description="Services provided by Distinctive Drafting and Design "
+      />
       <PageHero imageName="house_photos/modern_2.jpg" pageName="Services" alt="Services page" />
       <div className="contain mx-auto text-center">
         <h1 className="section-title">Imagine your dream home. Then see it come to life</h1>

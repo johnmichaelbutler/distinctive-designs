@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Modal(props) {
-  const { showModal, src, width, height, handleClose } = props;
+  const { showModal, src, handleClose } = props;
   const showHideClassName = showModal ? "modal block" : "modal hidden";
   return (
     <div className={showHideClassName} onClick={handleClose}>

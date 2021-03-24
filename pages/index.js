@@ -1,8 +1,6 @@
-import Head from 'next/head';
-import Contact from '../components/contact';
 import MainHero from '../components/main-hero';
 import Reviews from '../components/reviews';
-import Image from 'next/image';
+import {NextSeo} from 'next-seo';
 import Affiliations from '../components/affiliations';
 import IndexGallery from '../components/index-gallery';
 
@@ -10,10 +8,10 @@ import IndexGallery from '../components/index-gallery';
 export default function Home() {
   return (
     <div >
-      <Head>
-        <title>Distinctive Designs LLC</title>
-        <link rel="icon" href="/logo_white.ico" />
-      </Head>
+      <NextSeo
+        title="Home - Distinctive Drafting and Design"
+        description="Distinctive Drafting and Design, LLC - Available for your drafting and design needs in South Texas"
+      />
       <main className="pt-16">
         <MainHero className=" " />
         <div className=" mx-auto text-center">
@@ -29,7 +27,6 @@ export default function Home() {
           <IndexGallery />
           <Affiliations />
           <Reviews />
-          {/* <Contact id="contact" /> */}
         </div>
       </main>
       <footer>

@@ -2,7 +2,6 @@
 export default function Reviews() {
   return (
     <div>
-      {/* If not doing multi-colored, change to h-full and remov h-screen */}
       <div className="contain h-900px lg:h-70vh grid grid-cols-2 items-center justify-center content-center pt-5 lg:pt-0">
         <div className="col-span-2 lg:col-span-1 mx-auto top-8 order-2">
           {/* Reviews from houzz */}
@@ -23,20 +22,3 @@ export default function Reviews() {
     </div>
   )
 };
-
-
-
-
-{/* <div>
-<div className="block lg:flex items-center justify-center content-center h-screen pt-20 lg:pt-0">
-  <div className="order-1">
-    <p className="order-1 text-2xl font-light pr-10 pb-10 lg:pb-0">We are driven and motivated to do our very best to ensure complete customer satisfaction. Our prices are competitive and our service and attention to detail is outstanding.</p>
-    {/* Houzz Badge 
-    <img src="https://st.hzcdn.com/static/badge_49_8@2x.png" alt="Emanuel Villa, Luis Zamarron in San Antonio, TX on Houzz" width="80" height="80" border="0" />
-  </div>
-  <div className="order-2">
-    Reviews from houzz 
-    <iframe className="order-2 text-center mx-auto" scrolling="no" width="300" height="435" src="https://www.houzz.com/reviewWidget/distinctive7930/" />
-  </div>
-</div>
-</div> */}

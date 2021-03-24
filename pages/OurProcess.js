@@ -1,8 +1,13 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import PageHero from '../components/page-hero';
 export default function OurProcess() {
   return (
     <div className="pt-16">
+      <NextSeo
+        title="Our Process - Distinctive Drafting and Design"
+        description="Process we take to build your dream home"
+      />
       <PageHero imageName="process/process_main.jpg" pageName="Our Process" alt="Our Process Page" />
       <div className="contain mx-auto text-center">
         <p className="section-title">We work closely with you to build a new home you and your family will love, enjoy and be proud to own</p>

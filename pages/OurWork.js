@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import PageHero from '../components/page-hero';
 import Modal from '../components/modal';
+import { NextSeo } from 'next-seo';
 import images_data from '../images_data';
 export default function OurWork() {
   const [showModal, setShowModal] = useState(false);
@@ -29,9 +30,12 @@ export default function OurWork() {
 
   return (
     <div className="pt-16">
+      <NextSeo
+        title="Our Work - Distinctive Drafting and Design"
+        description="A sample of some of our previous work from Distinctive Drafting and Design"
+      />
       <PageHero pageName="Our Work" imageName="house_photos/snavely/pool.jpg" alt="Our Work Page" />
       {showModal && <Modal showModal={showModal} src={src} handleClose={() => setShowModal(false)} />}
-      {/* <iframe width="1280" height="720" src="https://www.houzz.com/embed/highlightVideo/0b609f5e0ddc2946" frameBor="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /> */}
       <div className="contain mx-auto text-center">
         <h1 className="section-title">Let our work speak for itself</h1>
         <div className="mt-10 grid grid-cols-9 grid-rows-9 gap-x-2 gap-y-2">

@@ -1,14 +1,12 @@
 import Mapbox from '../components/mapbox';
 import Head from 'next/head';
-import Contact from '../components/contact';
 import Team from '../components/team';
-import Image from 'next/image';
 import PageHero from '../components/page-hero';
 export default function AboutUs() {
   return (
     <div className="pt-16">
       <Head>
-        <title>Distinctive Designs LLC</title>
+        <title>About Us - Distinctive Designs LLC</title>
         <link rel="icon" href="/logo_white.ico" />
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js" />
