@@ -1,8 +1,7 @@
 import {useState, useEffect, useRef} from 'react';
 import mapboxgl from 'mapbox-gl';
 export default function Mapbox() {
-  // mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
-  mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obm1pY2hhZWxidXRsZXIiLCJhIjoiY2tsOHc5NTBnMDFsMjJ1bW9pcXhxZmVsZyJ9.r27CtaDZ4W7p7ZFs6XCJpA';
+  mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
   const coordinatesHrl = [-97.70021817590026, 26.17119956997308];
   const coordinatesSA = [-98.55464396483997, 29.513481967758327];
