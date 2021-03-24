@@ -60,7 +60,7 @@ export default function Contact(){
   };
 
   return (
-    <div className="footer-contain h-full grid grid-cols-1 md:grid-cols-2 bg-gray-200 text-black py-10 mt-10">
+    <div id="contact" className="footer-contain h-full grid grid-cols-1 md:grid-cols-2 bg-gray-200 text-black py-10 mt-10">
       <div className="col-span-1 text-center items-center justify-center">
         <p className="body-text">We would love to work with you on designing your dream home!</p>
         <div className="flex flex-col items-center md:items-start my-10 h-1/2 justify-between text-xl ">
