@@ -41,26 +41,25 @@ export default function Navbar() {
             <div className="hidden sm:flex sm:ml-6 justify-center items-center text-center">
               <div className="flex space-x-4">
                 <Link href="/Services">
-                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm lg:text-base uppercase my-auto">Services</a>
                 </Link>
                 <Link href="/OurProcess">
-                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Process</a>
+                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm lg:text-base uppercase">Our Process</a>
                 </Link>
                 <Link href="/OurWork">
-                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Work</a>
+                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm lg:text-base  uppercase">Our Work</a>
                 </Link>
-                <Link href="AboutUs">
-                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                <Link href="/AboutUs">
+                  <a className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm lg:text-base uppercase">About Us</a>
                 </Link>
-
               </div>
             </div>
           </div>
 
           {/* Contact Us Button */}
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <Link href="#contact">
-              <button className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            <Link href="/#contact" scroll={false}>
+              <button className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm lg:text-md  uppercase">
                 <a>Contact Us</a>
               </button>
             </Link>
@@ -69,20 +68,29 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu, toggle classNamees based on menu state. */}
-      <div className={`${openMenu ? '' : 'hidden'} sm:hidden  fixed z-10 bg-mobile-nav-bg rounded-md `}>
-        <div className="px-2 pt-2 pb-3 space-y-1">
-        <Link href="/Services">
-          <a  onClick={handleOpenMenu} className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-        </Link>
-        <Link href="/OurProcess">
-          <a  onClick={handleOpenMenu} className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Process</a>
-        </Link>
-        <Link href="/OurWork">
-          <a  onClick={handleOpenMenu} className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Work</a>
-        </Link>
-        <Link href="AboutUs">
-          <a  onClick={handleOpenMenu} className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-        </Link>
+      <div className={`${openMenu ? '' : 'hidden'} sm:hidden h-2/5 w-full fixed z-10 bg-mobile-nav-bg text-md`}>
+        {/* Removed 'px-2 pt-2 pb-3 space-y-1 ' */}
+        <div className="w-full h-full grid grid-rows-4 text-center items-center">
+          <div className="row-span-1 hover:underline hover:text-white">
+            <Link href="/Services">
+              <a  onClick={handleOpenMenu} className="text-gray-200   uppercase">Services</a>
+            </Link>
+          </div>
+          <div className="row-span-1">
+            <Link href="/OurProcess">
+              <a  onClick={handleOpenMenu} className="text-gray-200 hover:underline hover:text-white uppercase">Our Process</a>
+            </Link>
+          </div>
+          <div className="row-span-1">
+            <Link href="/OurWork">
+              <a  onClick={handleOpenMenu} className="text-gray-200 hover:underline hover:text-white  uppercase">Our Work</a>
+            </Link>
+          </div>
+          <div className="row-span-1">
+            <Link href="/AboutUs">
+              <a  onClick={handleOpenMenu} className="text-gray-200 hover:underline hover:text-white uppercase">About Us</a>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
