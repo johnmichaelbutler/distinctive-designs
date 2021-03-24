@@ -148,3 +148,127 @@ a {
   /* position: fixed; */
   /* @apply fixed h-screen w-screen overflow-hidden; */
 }
+
+.snavely_house {
+  @apply col-span-9;
+}
+
+.kitchen_island {
+  @apply row-span-2 col-span-5;
+}
+
+.doorway {
+  @apply col-span-4;
+}
+
+.chandelier {
+  @apply row-span-2 col-span-4;
+}
+
+.tan_1 {
+  @apply row-span-3 col-span-5;
+}
+
+.kitchen_to_livingroom {
+  @apply row-span-2 col-span-4;
+}
+
+.garage_1 {
+  @apply row-span-2 col-span-7;
+}
+
+.entryway_lighting {
+  @apply row-span-1 col-span-2;
+}
+
+.dining_room {
+  @apply row-span-1 col-span-2;
+}
+
+.land_rover {
+  @apply row-span-2 col-span-9;
+}
+
+.fireplace_1 {
+  @apply row-span-1 col-span-2;
+}
+
+.modern_2 {
+  @apply row-span-1 col-span-5;
+}
+
+.shower_1 {
+  @apply row-span-1 col-span-2;
+}
+
+.yellow_1 {
+  @apply row-span-2 col-span-3;
+}
+
+.outside {
+  @apply row-span-3 col-span-6;
+}
+
+.country_3 {
+  @apply row-span-3 col-span-6;
+}
+
+.entryway {
+  @apply row-span-4 col-span-3;
+}
+
+.awning_1 {
+  @apply row-span-1 col-span-6;
+}
+
+.staircase_1 {
+  @apply row-span-2 col-span-3;
+}
+
+.pool {
+  @apply row-span-2 col-span-6;
+}
+
+.two_bricks_1 {
+  @apply row-span-2 col-span-7;
+}
+
+.front_2 {
+  @apply row-span-2 col-span-2;
+}
+
+.porch {
+  @apply row-span-2 col-span-4;
+}
+
+.garden_1 {
+  @apply row-span-1 col-span-5;
+}
+
+.balcony_1 {
+  @apply row-span-2 col-span-5;
+}
+
+.blue_1 {
+  @apply row-span-1 col-span-4;
+}
+
+.hill_country_2 {
+  @apply row-span-1 col-span-4;
+}
+
+.other_1 {
+  @apply row-span-1 col-span-5;
+}
+
+.livingroom_to_kitchen {
+  @apply row-span-1 col-span-4;
+}
+
+.tuscan_1 {
+  @apply row-span-1 col-span-5;
+}
+
+.mediterranean_1 {
+  @apply row-span-1 col-span-9;
+}

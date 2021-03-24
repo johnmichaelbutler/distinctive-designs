@@ -15,8 +15,8 @@ export default function OurWork() {
   }
 
 
-  const images = images_data.map(({className, src, width, height, name}) => (
-    <div className={className} key={name}>
+  const images = images_data.map(({src, width, height, name}) => (
+    <div className={name} key={name}>
       <Image
         src={src}
         width={width}
